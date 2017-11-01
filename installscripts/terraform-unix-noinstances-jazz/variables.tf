@@ -1,15 +1,14 @@
-variable "region" { type = "string" default = "us-east-1" }
+variable "region" { 
+  type = "string" 
+  default = "us-east-1" 
+  }
 variable "bitbucketserver_ami" {
   type = "string"
   default = "ami-65a46e1f"
-	// amis copied to us-west-1
-  //default = "ami-74755c14"
 }
 variable "jenkinsserver_ami" {
   type = "string"
   default = "ami-d284bec4"
-	// amis copied to us-west-1
-  //default = "ami-ae745dce"
 }
 variable "chefconfigDir" {
   type = "string"
@@ -76,12 +75,7 @@ variable "cognito_pool_password" {
   type = "string"
   default = "Welcome@2Jazz"
 }
-variable "github_username" {
-  type = "string"
-  default = "ustharin"
+variable "github_branch" { 
+  type = "string" 
+  default = "development" 
 }
-variable "github_password" {
-  type = "string"
-  default = "Tmobiledemo1"
-}
-variable "github_branch" { type = "string" default = "development" }
